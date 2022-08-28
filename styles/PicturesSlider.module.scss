@@ -17,9 +17,12 @@
   //     }
 
   &__container {
-    width: max-content;
-    // padding-right: 5%;
+    width: 100%;
+    padding: 5% 0;
     @include flex-center;
+    margin-bottom: 10px;
+    overflow: hidden;
+
     // align-items: flex-start;
 
     //     @media (max-width: 1000px) {
@@ -28,9 +31,12 @@
     //   }
   }
   &__img {
-    width: 277px;
+    position: relative;
+    @include flex-center;
+    width: 300px;
+    min-width: 19%;
     height: 243px;
-    margin: 0 35px;
+    margin: 0 25px;
 
     // @media (max-width: 1000px) {
     //   width: 100%;
@@ -39,8 +45,30 @@
     // }
   }
 
+  &__description {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    text-transform: capitalize;
+    z-index: 2;
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  &__stat {
+    color: rgba(118, 97, 97, 0.9);
+  }
+
   &__controls {
-    width: 150px;
+    width: 120px;
     @include flex-between;
   }
 }
