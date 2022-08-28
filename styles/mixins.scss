@@ -1,0 +1,54 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-start-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-between-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  text-transform: capitalize;
+  color: #222433;
+}
+
+@mixin text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1e1a20;
+  mix-blend-mode: normal;
+}

@@ -1,0 +1,84 @@
+@import './mixins.scss';
+
+.actions {
+  @include flex-start;
+  align-items: flex-start;
+  width: 77%;
+  margin: 92px auto;
+  border-radius: 20px;
+  overflow: hidden;
+
+  @media (max-width: 1000px) {
+    @include flex-start-column;
+
+    @media (max-width: 756px) {
+      width: 100%;
+      margin: 100px 0;
+    }
+  }
+
+  &__getstarted {
+    width: 50%;
+    padding-right: 5%;
+    @include flex-center-column;
+    align-items: flex-start;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 40px;
+    @include title;
+
+    @media (max-width: 1000px) {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+      line-height: 150%;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    text-align: left;
+    @include text;
+    padding-bottom: 56px;
+
+    @media (max-width: 1000px) {
+      width: 90%;
+      margin: 0 auto;
+    }
+    @media (max-width: 767px) {
+      font-size: 15px;
+      line-height: 27px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__info {
+    width: 50%;
+    padding-left: 5%;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      padding: 48px 5% 0;
+      //padding-left: 5%;
+    }
+  }
+
+  &__button {
+    width: 50%;
+    height: 48px;
+
+    @media (max-width: 1000px) {
+      margin-left: 5%;
+    }
+  }
+}

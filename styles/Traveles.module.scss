@@ -1,0 +1,127 @@
+@import './mixins.scss';
+
+.traveles {
+  padding-top: 64px; // @include flex-between;
+  width: 100%;
+
+  &__top {
+    @include flex-between;
+    display: flex;
+    width: 90%;
+    height: 112px;
+    margin: 0 auto;
+    overflow-x: hidden;
+
+    @media (max-width: 835px) {
+      @include flex-start-column;
+      height: max-content;
+    }
+  }
+
+  &__item {
+    @include flex-start;
+    width: 25%;
+    min-width: 250px;
+    height: 112px;
+
+    @media (max-width: 756px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__img {
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+
+  &__description {
+    align-items: flex-start;
+    width: 184px;
+    margin-top: -10px;
+  }
+
+  &__hash {
+    font-size: 12px;
+    color: #807c7c;
+    height: 16px;
+
+    &::first-letter {
+      color: #333333;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    height: 40px;
+    color: #333333;
+  }
+
+  &__see {
+    font-size: 12px;
+    color: #807c7c;
+    text-decoration: underline;
+    margin-top: 10px;
+  }
+
+  &__slider {
+    @include flex-between;
+    justify-content: space-around;
+    width: 85%;
+    height: 512px;
+    margin: 192px auto 0;
+
+    @media (max-width: 756px) {
+      @include flex-center-column;
+      width: 100%;
+      margin-top: 64px;
+      height: max-content;
+    }
+  }
+
+  &__window {
+    @include flex-start;
+    position: relative;
+    width: 75%;
+    height: 512px;
+    overflow: hidden;
+    background: '#FFBD9E';
+
+    @media (max-width: 756px) {
+      width: 100%;
+      height: 599px;
+    }
+  }
+
+  &__action {
+    border: none;
+    cursor: pointer;
+    background: none;
+
+    @media (max-width: 756px) {
+      display: none;
+    }
+  }
+
+  &__choise {
+    @include flex-between;
+    width: 100px;
+    margin: 20px auto 0;
+
+    @media (min-width: 757px) {
+      display: none;
+    }
+  }
+  &__radio {
+    width: 11px;
+    height: 11px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,115 @@
+@import './mixins.scss';
+
+.info {
+  width: 77%;
+  margin: 0 auto 100px;
+  padding: 0;
+
+  @media (max-width: 756px) {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0 18px;
+  }
+
+  &__top {
+    width: 75%;
+    height: max-content;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    background: url('../public/circle.png') center / contain no-repeat;
+
+    @media (max-width: 1085px) {
+      width: 90%;
+    }
+
+    @media (max-width: 756px) {
+      margin-top: 100px;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    padding-top: 208px;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 700;
+    text-align: center;
+    color: #222433;
+
+    @media (max-width: 756px) {
+      font-size: 24px;
+      line-height: 42px;
+    }
+  }
+
+  &__line {
+    margin: 62px auto 82px;
+    width: 70%;
+    height: 4px;
+    background: #1e1a20;
+
+    @media (max-width: 756px) {
+      width: 90%;
+      height: 3px;
+    }
+  }
+
+  &__stats {
+    @include flex-between;
+    width: 70%;
+    margin: 0 auto;
+
+    @media (max-width: 960px) {
+      @include flex-center;
+      flex-wrap: wrap;
+      //gap: 15px;
+    }
+
+    @media (max-width: 576px) {
+      width: 90%;
+    }
+  }
+
+  &__item {
+    @include flex-between;
+    width: 190px;
+    padding: 0 10px;
+
+    @media (max-width: 960px) {
+      @include flex-between-column;
+      height: 100%;
+      padding-bottom: 40px;
+    }
+
+    @media (max-width: 576px) {
+      width: 140px;
+    }
+  }
+
+  &__icon {
+    min-width: 45px;
+    min-height: 45px;
+  }
+
+  &__description {
+    @include flex-center;
+    min-width: 140px;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1e1a20;
+
+    @media (max-width: 960px) {
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    @media (max-width: 756px) {
+      font-size: 13px;
+    }
+  }
+}
