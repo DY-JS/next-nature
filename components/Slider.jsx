@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import ArrowLeftImg from '../public/arrowLeft.png';
 import ArrowRightImg from '../public/arrowRight.png';
@@ -8,11 +8,9 @@ import MainCardImg from '../public/main-card.png';
 import PlantTreesImg from '../public/plantTrees.png';
 import SaveEnergyImg from '../public/saveEnergy.png';
 
-import styles from '../styles/PicturesSlider.module.scss';
+import styles from '../styles/Slider.module.scss';
 
-export default function PicturesSlider() {
-  const [position, setPosition] = useState(0);
-
+export default function Slider() {
   const images = [
     {
       id: 'avoid plastic',
@@ -84,7 +82,7 @@ export default function PicturesSlider() {
   return (
     <section className={styles.slider}>
       <div className={styles.slider__container}>
-        {prepearedImages.map(({ id, image, number }, i) => (
+        {prepearedImages.map(({ id, image, number }) => (
           <div
             key={id}
             className={styles.slider__img}

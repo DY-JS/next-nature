@@ -1,6 +1,7 @@
 @import './mixins.scss';
 
 .info {
+  position: relative;
   width: 77%;
   margin: 0 auto 100px;
   padding: 0;
@@ -110,6 +111,126 @@
 
     @media (max-width: 756px) {
       font-size: 13px;
+    }
+  }
+  &__topleft {
+    position: absolute;
+    @include flex-center;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 756px) {
+      transform: rotate(20deg);
+      top: 7%;
+      left: 20%;
+      width: 44px;
+      height: 57x;
+    }
+
+    @media (max-width: 360px) {
+      top: 10%;
+    }
+  }
+
+  &__topright {
+    position: absolute;
+    @include flex-center;
+    top: 0;
+    right: -10%;
+
+    @media (max-width: 756px) {
+      transform: rotate(-20deg);
+      top: 7%;
+      right: 20%;
+      width: 44px;
+      height: 57x;
+    }
+
+    @media (max-width: 360px) {
+      top: 10%;
+    }
+  }
+
+  &__middleleft {
+    position: absolute;
+    @include flex-center;
+    top: 25%;
+    left: 0;
+
+    @media (max-width: 756px) {
+      top: 30%;
+      left: 8%;
+      width: 51px;
+      height: 27x;
+    }
+
+    @media (max-width: 536px) {
+      top: 17%;
+      left: 4%;
+      transform: rotate(15deg);
+    }
+  }
+
+  &__middleright {
+    position: absolute;
+    @include flex-center;
+    top: 30%;
+    right: 0;
+
+    @media (max-width: 756px) {
+      right: 8%;
+      width: 66px;
+      height: 33px;
+    }
+
+    @media (max-width: 536px) {
+      top: 17%;
+      right: 4%;
+      transform: rotate(-25deg);
+    }
+  }
+
+  &__bottomleft {
+    position: absolute;
+    @include flex-center;
+    top: 65%;
+    left: 0;
+
+    @media (max-width: 1000px) {
+      top: 45%;
+    }
+
+    @media (max-width: 756px) {
+      top: 50%;
+      left: 10%;
+      width: 66px;
+      height: 36px;
+    }
+
+    @media (max-width: 580px) {
+      display: none;
+    }
+  }
+
+  &__bottomright {
+    position: absolute;
+    @include flex-center;
+    top: 65%;
+    right: 0;
+
+    @media (max-width: 1000px) {
+      top: 45%;
+    }
+
+    @media (max-width: 756px) {
+      top: 50%;
+      right: 10%;
+      width: 81px;
+      height: 50px;
+    }
+
+    @media (max-width: 580px) {
+      display: none;
     }
   }
 }

@@ -2,6 +2,12 @@ import Image from 'next/image';
 import AvgIcon from '../public/avg.png';
 import PersonIcon from '../public/person.png';
 import AnalyzerIcon from '../public/analyzer.png';
+import TopLeftLeaf from '../public/TopLeftLeaf.png';
+import TopRightLeaf from '../public/TopRightLeaf.png';
+import MiddleLeftLeaf from '../public/MiddleLeftLeaf.png';
+import MiddleRightLeaf from '../public/MiddleRightLeaf.png';
+import BottomLeftLeaf from '../public/BottomLeftLeaf.png';
+import BottomRightLeaf from '../public/BottomRightLeaf.png';
 
 import styles from '../styles/Info.module.scss';
 
@@ -42,6 +48,24 @@ export default function Info() {
             <span className={styles.info__description}>{description}</span>
           </div>
         ))}
+      </div>
+      <div className={styles.info__topleft}>
+        <Image width={100} height={77} src={TopLeftLeaf} alt="leaf" />
+      </div>
+      <div className={styles.info__topright}>
+        <Image width={162} height={111} src={TopRightLeaf} alt="leaft" />
+      </div>
+      <div className={styles.info__middleleft}>
+        <Image width={51} height={27} src={MiddleLeftLeaf} alt="leaf" />
+      </div>
+      <div className={styles.info__middleright}>
+        <Image width={51} height={27} src={MiddleRightLeaf} alt="leaft" />
+      </div>
+      <div className={styles.info__bottomleft}>
+        <Image width={51} height={27} src={BottomLeftLeaf} alt="leaf" />
+      </div>
+      <div className={styles.info__bottomright}>
+        <Image width={51} height={27} src={BottomRightLeaf} alt="leaft" />
       </div>
     </section>
   );

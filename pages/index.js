@@ -6,8 +6,9 @@ import Team from '../components/Team';
 import Info from '../components/Info';
 import LoginForm from '../components/LoginForm';
 import Actions from '../components/Actions';
-import PicturesSlider from '../components/PicturesSlider';
+import PicturesSlider from '../components/Slider';
 import styles from '../styles/Home.module.scss';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <LoginForm />
       <Actions />
       <PicturesSlider />
+      <Footer />
 
       {/* <footer className={styles.footer}>
         <a
