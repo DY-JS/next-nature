@@ -28,10 +28,14 @@
 
   &__logo {
     width: max-content;
-  }
-
-  &__logoimg {
     cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: traslateX(-20%);
+      transform: scale(1.1);
+      transition: all 0.5s;
+    }
   }
 
   &__menu {

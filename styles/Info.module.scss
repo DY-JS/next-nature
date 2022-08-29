@@ -154,8 +154,8 @@
   &__middleleft {
     position: absolute;
     @include flex-center;
-    top: 25%;
-    left: 0;
+    top: 40%;
+    left: -20px;
 
     @media (max-width: 756px) {
       top: 30%;
@@ -174,10 +174,11 @@
   &__middleright {
     position: absolute;
     @include flex-center;
-    top: 30%;
-    right: 0;
+    top: 40%;
+    right: -20px;
 
     @media (max-width: 756px) {
+      top: 30%;
       right: 8%;
       width: 66px;
       height: 33px;
@@ -196,10 +197,6 @@
     top: 65%;
     left: 0;
 
-    @media (max-width: 1000px) {
-      top: 45%;
-    }
-
     @media (max-width: 756px) {
       top: 50%;
       left: 10%;
@@ -217,10 +214,6 @@
     @include flex-center;
     top: 65%;
     right: 0;
-
-    @media (max-width: 1000px) {
-      top: 45%;
-    }
 
     @media (max-width: 756px) {
       top: 50%;

@@ -31,7 +31,7 @@ export default function Navigation() {
           onClick={() => setIsOpened(false)}
         />
         <div className={styles.nav__close} onClick={() => setIsOpened(false)}>
-          <Image src={CloseImg} width={16} height={16} alt="logo" />
+          <Image src={CloseImg} width={16} height={16} alt="close" />
         </div>
       </div>
       <div className={styles.nav__menu} onClick={() => setIsOpened(false)}>
@@ -43,7 +43,7 @@ export default function Navigation() {
       </div>
       <button className={styles.nav__button}>Apply</button>
       <div className={styles.nav__burger} onClick={() => setIsOpened(true)}>
-        <Image src={BurgerImg} width={22} height={17} alt="logo" />
+        <Image src={BurgerImg} width={22} height={17} alt="menu" />
       </div>
     </nav>
   );
