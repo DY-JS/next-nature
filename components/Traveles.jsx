@@ -9,13 +9,8 @@ import ArrowRightImg from '../public/arrowRight.png';
 import styles from '../styles/Traveles.module.scss';
 import CardTemplate from './CardTemplate';
 
-export default function Traveles() {
+export default function Traveles({ placesRef }) {
   const [position, setPosition] = useState(0);
-
-  const handleRadioChange = (e) => {
-    console.log(e.currentTarget.value);
-    setPosition(e.currentTarget.value);
-  };
 
   const content = [
     {
@@ -128,7 +123,7 @@ export default function Traveles() {
           <Image width={24} height={44} src={ArrowRightImg} alt="right" />
         </button>
 
-        <div className={styles.traveles__choise}>
+        <div ref={placesRef} className={styles.traveles__choise}>
           {content.map(({ id }, i) => (
             <div
               key={id}

@@ -4,7 +4,7 @@ import ActionItem from './ActionItem';
 
 import styles from '../styles/Actions.module.scss';
 
-export default function Actions() {
+export default function Actions({ missionRef }) {
   const items = [
     {
       id: 1,
@@ -42,7 +42,7 @@ export default function Actions() {
           </Button>
         </div>
       </div>
-      <div className={styles.actions__info}>
+      <div ref={missionRef} className={styles.actions__info}>
         {items.map(({ id, title, text }) => (
           <ActionItem key={id} title={title} text={text} />
         ))}

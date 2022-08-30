@@ -3,7 +3,7 @@
 .info {
   position: relative;
   width: 77%;
-  margin: 0 auto 100px;
+  margin: 100px auto 100px;
   padding: 0;
 
   @media (max-width: 756px) {
@@ -64,7 +64,6 @@
     @media (max-width: 960px) {
       @include flex-center;
       flex-wrap: wrap;
-      //gap: 15px;
     }
 
     @media (max-width: 576px) {
@@ -121,14 +120,15 @@
 
     @media (max-width: 756px) {
       transform: rotate(20deg);
-      top: 7%;
+      top: 0;
       left: 20%;
       width: 44px;
       height: 57x;
     }
 
-    @media (max-width: 360px) {
-      top: 10%;
+    @media (max-width: 536px) {
+      top: -3%;
+      left: 10%;
     }
   }
 
@@ -140,33 +140,36 @@
 
     @media (max-width: 756px) {
       transform: rotate(-20deg);
-      top: 7%;
-      right: 20%;
+      top: 0;
+      right: 15%;
       width: 44px;
       height: 57x;
     }
 
-    @media (max-width: 360px) {
-      top: 10%;
+    @media (max-width: 536px) {
+      top: -3%;
+      right: 10%;
     }
   }
 
   &__middleleft {
     position: absolute;
     @include flex-center;
-    top: 40%;
+    top: 25%;
     left: -20px;
 
     @media (max-width: 756px) {
-      top: 30%;
-      left: 8%;
+      top: 22%;
+      left: 7%;
       width: 51px;
       height: 27x;
     }
 
     @media (max-width: 536px) {
-      top: 17%;
-      left: 4%;
+      top: 7%;
+      left: 3%;
+      width: 28px;
+      height: 15x;
       transform: rotate(15deg);
     }
   }
@@ -174,19 +177,20 @@
   &__middleright {
     position: absolute;
     @include flex-center;
-    top: 40%;
+    top: 25%;
     right: -20px;
 
     @media (max-width: 756px) {
-      top: 30%;
       right: 8%;
       width: 66px;
       height: 33px;
     }
 
     @media (max-width: 536px) {
-      top: 17%;
-      right: 4%;
+      top: 7%;
+      right: 3%;
+      width: 28px;
+      height: 15x;
       transform: rotate(-25deg);
     }
   }
@@ -194,11 +198,11 @@
   &__bottomleft {
     position: absolute;
     @include flex-center;
-    top: 65%;
+    top: 45%;
     left: 0;
 
     @media (max-width: 756px) {
-      top: 50%;
+      top: 40%;
       left: 10%;
       width: 66px;
       height: 36px;
@@ -212,11 +216,11 @@
   &__bottomright {
     position: absolute;
     @include flex-center;
-    top: 65%;
+    top: 45%;
     right: 0;
 
     @media (max-width: 756px) {
-      top: 50%;
+      top: 40%;
       right: 10%;
       width: 81px;
       height: 50px;

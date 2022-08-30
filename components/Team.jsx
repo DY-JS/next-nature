@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import Image from 'next/image';
 import Photo1 from '../public/Photo1.png';
 import Photo2 from '../public/Photo2.png';
@@ -7,7 +8,7 @@ import ChainRight from '../public/chain2.png';
 
 import styles from '../styles/Team.module.scss';
 
-export default function Team() {
+export default function Team({ teamRef }) {
   return (
     <section className={styles.team}>
       <div className={styles.team__top}>
@@ -16,7 +17,7 @@ export default function Team() {
           Learn more about how you can save our planet's nature.{' '}
         </p>
       </div>
-      <div className={styles.team__photos}>
+      <div ref={teamRef} className={styles.team__photos}>
         <div className={styles.team__photo}>
           <Image width={323} height={274} src={Photo1} alt="photo" />
         </div>
