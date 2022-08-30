@@ -202,13 +202,13 @@
     left: 0;
 
     @media (max-width: 756px) {
-      top: 40%;
+      top: 47%;
       left: 10%;
       width: 66px;
       height: 36px;
     }
 
-    @media (max-width: 580px) {
+    @media (max-width: 536px) {
       display: none;
     }
   }
@@ -220,13 +220,13 @@
     right: 0;
 
     @media (max-width: 756px) {
-      top: 40%;
+      top: 47%;
       right: 10%;
       width: 81px;
       height: 50px;
     }
 
-    @media (max-width: 580px) {
+    @media (max-width: 536px) {
       display: none;
     }
   }
