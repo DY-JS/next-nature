@@ -135,7 +135,7 @@
   &__topright {
     position: absolute;
     @include flex-center;
-    top: 0;
+    top: -2%;
     right: -10%;
 
     @media (max-width: 756px) {
@@ -177,10 +177,11 @@
   &__middleright {
     position: absolute;
     @include flex-center;
-    top: 25%;
+    top: 27%;
     right: -20px;
 
     @media (max-width: 756px) {
+      top: 22%;
       right: 8%;
       width: 66px;
       height: 33px;
@@ -202,7 +203,7 @@
     left: 0;
 
     @media (max-width: 756px) {
-      top: 47%;
+      top: 46%;
       left: 10%;
       width: 66px;
       height: 36px;
@@ -220,7 +221,7 @@
     right: 0;
 
     @media (max-width: 756px) {
-      top: 47%;
+      top: 46%;
       right: 10%;
       width: 81px;
       height: 50px;
