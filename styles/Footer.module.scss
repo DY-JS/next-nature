@@ -28,6 +28,10 @@
     font-size: 34px;
     line-height: 48px;
     padding-bottom: 32px;
+
+    @media (max-width: 756px) {
+      padding-bottom: 15px;
+    }
   }
 
   &__allrights {
@@ -106,6 +110,10 @@
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 32px;
+
+    @media (max-width: 756px) {
+      padding-bottom: 15px;
+    }
   }
 
   &__links {
