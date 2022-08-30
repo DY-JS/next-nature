@@ -4,7 +4,10 @@ import Layout from '../components/Layout';
 export default function Places() {
   const placesRef = useRef(null);
   const scrollToMyRef = () => {
-    window.scrollTo(0, placesRef.current.scrollHeight + 1200);
+    window.scrollTo(
+      0,
+      placesRef.current.scrollHeight + (window.screen.width > 756 ? 1200 : 1650)
+    );
   };
 
   useEffect(() => {

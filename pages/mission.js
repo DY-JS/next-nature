@@ -5,7 +5,11 @@ export default function Mission() {
   let missionRef = useRef(null);
 
   const scrollToMyRef = () => {
-    window.scrollTo(0, missionRef.current.scrollHeight + 3650);
+    window.scrollTo(
+      0,
+      missionRef.current.scrollHeight +
+        (window.screen.width > 756 ? 3650 : 4850)
+    );
   };
 
   useEffect(() => {
