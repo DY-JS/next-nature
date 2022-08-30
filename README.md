@@ -1,3 +1,25 @@
+# Тестовое на NextJS и вёрстку
+
+## Технологии
+
+**Front-end фреймворк:** NextJS 
+
+**CSS:** Scss + CSS Modules
+
+**Bundler:** через [Create Next App](https://nextjs.org/docs/api-reference/create-next-app)
+
+## Задача
+
+1. Сверстать десктоп и мобильную версию макета: [https://www.figma.com/file/5hkhtQEBHqtZGnejDjZxvy/Front-end-Test-(Copy)](https://www.figma.com/file/5hkhtQEBHqtZGnejDjZxvy/Front-end-Test-(Copy)?node-id=0%3A1)
+2. Pixel perfect не нужен, но общую иерархию элементов нужно сохранить. Размеры и отступы должны выглядеть корректно.
+3. Сверстать все три слайда и добавить скрипт, который будет их листать. Можно взять готовый слайдер
+4. Самостоятельно добавить стейты для всех интерактивных элементов.
+5. Добавите анимацию или параллакс там где, на ваш взгляд, это уместно. Библиотеки на ваше усмотрение. 
+6. Обеспечить корректность отображения в Chrome, Firefox и Edge
+7. Выполненное задание нужно залить на github и предоставить ссылку. Задеплоить на [netlify](https://www.netlify.com/) или другой хостинг и предоставить ссылку для превью.
+
+////////////////////////////////////////
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
