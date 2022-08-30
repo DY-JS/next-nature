@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-import BrownLeaf from '../public/BrownLeaf.png';
 import CloseImg from '../public/close.png';
 import OpenImg from '../public/Btn-open.png';
-import Input from './common/Input';
-import Button from './common/Button';
 
 import styles from '../styles/ActionItem.module.scss';
 

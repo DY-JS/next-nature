@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import BrownLeaf from '../public/BrownLeaf.png';
 import BlueLeaf from '../public/BlueLeaf.png';
@@ -15,7 +14,6 @@ export default function LoginForm() {
   };
   const [inputs, setInputs] = useState(initialInputs);
   const inputStyle = { paddingLeft: '24px' };
-  //const [validate, setValidate] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.currentTarget;

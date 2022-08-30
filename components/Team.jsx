@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import Image from 'next/image';
 import Photo1 from '../public/Photo1.png';
 import Photo2 from '../public/Photo2.png';

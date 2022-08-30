@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Router from 'next/router';
 import Image from 'next/image';
 import LogoImg from '../public/Logo.svg';
 import BurgerImg from '../public/Union.svg';

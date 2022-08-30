@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import TwitterImg from '../public/Twitter.png';
 import LinkedInImg from '../public/LinkedIn.png';

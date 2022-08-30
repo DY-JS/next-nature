@@ -1,6 +1,7 @@
-import styles from '../styles/Header.module.scss';
 import Navigation from './Navigation';
 import Subheader from './Subheader';
+
+import styles from '../styles/Header.module.scss';
 
 export default function Header() {
   return (

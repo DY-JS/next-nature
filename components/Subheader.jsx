@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import HeadlineImg from '../public/Headline.svg';
 import ParrotImg from '../public/Parrot.svg';
