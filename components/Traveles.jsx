@@ -63,8 +63,8 @@ export default function Traveles({ placesRef }) {
       <div className={styles.traveles__top}>
         {content.map(({ id, image, hashtag, title }) => (
           <div key={id} className={styles.traveles__item}>
-            <div className={styles.traveles__img}>
-              <Image width={112} height={112} src={image} alt="photo" />
+            <div className={styles.traveles__imgcontainer}>
+              <Image className={styles.traveles__img} src={image} alt="photo" />
             </div>
             <div className={styles.traveles__description}>
               <p className={styles.traveles__hash}>
