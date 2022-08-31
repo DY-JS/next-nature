@@ -29,13 +29,20 @@
     }
   }
 
-  &__img {
-    width: 112px;
-    height: 112px;
+  &__imgcontainer {
     object-fit: cover;
     box-sizing: border-box;
     margin-right: 20px;
     overflow: hidden;
+  }
+
+  &__img {
+    width: 112;
+    height: 112;
+
+    &:nth-of-type(2) {
+      width: 193px;
+    }
   }
 
   &__description {
