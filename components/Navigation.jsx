@@ -34,9 +34,13 @@ export default function Navigation() {
           <Image src={CloseImg} width={16} height={16} alt="close" />
         </div>
       </div>
-      <div className={styles.nav__menu} onClick={() => setIsOpened(false)}>
+      <div
+        id="list"
+        className={styles.nav__menu}
+        onClick={() => setIsOpened(false)}
+      >
         {navigation.map(({ id, title, path }) => (
-          <Link key={id} href={path}>
+          <Link id={title} key={id} href={path}>
             <a className={styles.nav__item}>{title}</a>
           </Link>
         ))}

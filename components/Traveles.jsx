@@ -80,7 +80,7 @@ export default function Traveles({ placesRef }) {
         ))}
       </div>
 
-      <div className={styles.traveles__slider}>
+      <div ref={placesRef} className={styles.traveles__slider}>
         <button
           disabled={position === 0}
           className={styles.traveles__action}
@@ -123,7 +123,7 @@ export default function Traveles({ placesRef }) {
           <Image width={24} height={44} src={ArrowRightImg} alt="right" />
         </button>
 
-        <div ref={placesRef} className={styles.traveles__choise}>
+        <div className={styles.traveles__choise}>
           {content.map(({ id }, i) => (
             <div
               key={id}

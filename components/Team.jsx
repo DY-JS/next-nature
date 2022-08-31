@@ -10,13 +10,13 @@ import styles from '../styles/Team.module.scss';
 export default function Team({ teamRef }) {
   return (
     <section className={styles.team}>
-      <div className={styles.team__top}>
+      <div ref={teamRef} className={styles.team__top}>
         <p className={styles.team__title}>Our Top Team</p>
         <p className={styles.team__text}>
           Learn more about how you can save our planet's nature.{' '}
         </p>
       </div>
-      <div ref={teamRef} className={styles.team__photos}>
+      <div className={styles.team__photos}>
         <div className={styles.team__photo}>
           <Image width={323} height={274} src={Photo1} alt="photo" />
         </div>

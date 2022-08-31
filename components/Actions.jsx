@@ -42,7 +42,7 @@ export default function Actions({ missionRef }) {
           </Button>
         </div>
       </div>
-      <div ref={missionRef} className={styles.actions__info}>
+      <div id="mission" ref={missionRef} className={styles.actions__info}>
         {items.map(({ id, title, text }) => (
           <ActionItem key={id} title={title} text={text} />
         ))}

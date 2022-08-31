@@ -4,7 +4,8 @@ import Layout from '../components/Layout';
 export default function Team() {
   const teamRef = useRef(null);
   const scrollToMyRef = () => {
-    window.scrollTo(0, teamRef.current.scrollHeight + 1700);
+    const getCoords = teamRef.current.getBoundingClientRect();
+    window.scrollTo(0, getCoords.top);
   };
 
   useEffect(() => {
